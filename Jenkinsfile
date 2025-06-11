@@ -16,7 +16,7 @@ pipeline {
                 sh 'python3 compute.py'
             }
         }
-        stage ('stage 3'){
+        stage('stage 3'){
             script{
             println("HELLO WORLD")
             }
