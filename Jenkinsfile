@@ -15,13 +15,12 @@ pipeline {
                 }
             }
         }
-        stage('stage 2'){
+        stage('stage 2') {
             steps {
-                script{
-                    println("Gavin's test was successful")
+                container('python3') {
+                    sh 'python3 compute.py'
                 }
             }
-        
         }
     }
 }
