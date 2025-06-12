@@ -1,4 +1,4 @@
-int i = 4
-int j = 7
-int g = i * j
-println(g)
+i = 4
+j = 7
+g = i * j
+println("The product of i and j is: ", g)
