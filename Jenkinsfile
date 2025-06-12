@@ -3,7 +3,7 @@
 pipeline {
     agent {
         kubernetes {
-            yaml libraryResource("pods/aws-cli-dev.yaml")
+            yaml(libraryResource('pods/python-build-dev.yaml'))
         }
     }
 
